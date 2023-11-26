@@ -1,0 +1,103 @@
+.parent {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  overflow: hidden;
+
+  .productImg {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  
+
+  .title {
+    line-height: 1em;
+    height: 2em;
+    /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
+  }
+
+  .description {
+    color: grey;
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.5em;
+    height: 4.5em;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .quantity {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+
+    input {
+      -webkit-appearance: none;
+      border: none;
+      text-align: center;
+      width: 32px;
+      font-size: 16px;
+      color: #43484D;
+      font-weight: 300;
+    }
+
+    .minus-btn,
+    .plus-btn {
+      margin-bottom: 3px;
+      width: 30px;
+      height: 30px;
+      background-color: #E1E8EE;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .price {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .AddCartButton {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+    & :hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .card {
+    .title{
+      line-height: 1em;
+      height: 2em;
+      padding: 5;
+      margin: 0;
+    }
+  }
+}
+
+
+
+
+
+
